@@ -1,0 +1,221 @@
+body {
+  background: linear-gradient(to bottom right, #f9b208, #f98404);
+  font-size: 2rem;
+  height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  height: 20%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.header__logo, .header__text {
+  font-size: 250%;
+}
+
+.collection {
+  background: white;
+  height: 65%;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 3rem;
+}
+.collection__section {
+  display: flex;
+}
+.collection__section--left {
+  flex-direction: column;
+}
+.collection__section--right {
+  display: flex;
+  flex-direction: column;
+}
+.collection__cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  list-style: none;
+  grid-gap: 2rem;
+}
+.collection__card {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0.2rem;
+  position: relative;
+  display: flex;
+  transition-duration: 0.3s;
+}
+.collection__card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.collection__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collection__datum {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.collection__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.collection__figure {
+  position: relative;
+  height: 24rem;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.collection__datum2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.collection__title2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.collection__bigimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.collection__bigtext {
+  height: 15rem;
+  overflow-y: scroll;
+}
+.collection__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 45rem;
+}
+.collection__link {
+  color: black;
+}
+
+.footer {
+  height: 15%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .header__text {
+    font-size: 122%;
+  }
+  .collection {
+    background: white;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    display: flex;
+    grid-template-columns: 40% 60%;
+    padding: 3rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+  .collection__section--right {
+    margin-top: 8rem;
+  }
+  .collection__bigimg {
+    position: absolute;
+  }
+  .collection__bigtext {
+    font-size: 1.2rem;
+    max-width: 40ch;
+    align-items: center;
+    display: flex;
+    height: 9rem;
+    overflow-y: scroll;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .collection__figure {
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    max-width: 40rem;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  .collection__section--right {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .collection__audio {
+    width: 20rem;
+    height: 4rem;
+  }
+  .collection__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .collection__card {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 0.2rem;
+    position: relative;
+    display: flex;
+    transition-duration: 0.3s;
+  }
+  .footer__text {
+    margin-top: 10rem;
+    font-size: 1.2rem;
+  }
+  .collection__datum {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+  }
+  .collection__title {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

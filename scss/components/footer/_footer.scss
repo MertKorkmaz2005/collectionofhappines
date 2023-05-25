@@ -1,0 +1,13 @@
+@use "../../abstracts/colors";
+@use "../../abstracts/mixins";
+
+
+
+
+.footer{
+    height: 15%;
+    width: 100%;
+    background: colors.$white-color;
+    @include mixins.flexCenter;
+    gap:4rem;
+}
